@@ -3,9 +3,12 @@ import React from "react";
 import Heading from "../Heading";
 import Navbar from "../Navbar";
 import BlogGrid from "../BlogGrid";
-// import Footer from "../Footer";
+import Footer from "../Footer";
 import SubHeading from "../SubHeading";
 import CategoryList from "../CategoryList";
+import CategoriesList from "../CategoriesList";
+
+//import BlogList from "../BlogList";
 
 // Week 1: Import the blogPosts and categories from the dummy-data.json file
 const data = require("../../dummy-data.json");
@@ -18,11 +21,12 @@ export default function HomePage() {
       <Navbar />
       <div className="container">
         <Heading />
+        {/* <BlogList/> */}
         <SubHeading subHeading={"Recent Blog Posts"} />
         <BlogGrid blogPosts={blogs}></BlogGrid>
         <SubHeading subHeading={"Categories"} />
         <CategoryList categories={categories}></CategoryList>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );

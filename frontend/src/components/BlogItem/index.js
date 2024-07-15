@@ -1,5 +1,5 @@
 import React from "react";
-
+import PropTypes from "prop-types";
 import BlogItemText from "../BlogItemText";
 
 import "../../App.css";
@@ -45,3 +45,9 @@ export default function BlogItem({
     );
   }
 }
+
+BlogItem.propTypes = {
+    index: PropTypes.number.isRequired,
+    blogPost: PropTypes.object.isRequired,
+    imageOrientation: PropTypes.string,
+};

@@ -2,6 +2,12 @@ import React from "react";
 
 import Categories from "../Categories";
 import "./index.css";
+import PropTypes from "prop-types";
+
+BlogItemText.propTypes = {
+  blogPost: PropTypes.object.isRequired,
+  headerFontSize: PropTypes.string,
+};
 
 export default function BlogItemText({ blogPost, headerFontSize }) {
   return (

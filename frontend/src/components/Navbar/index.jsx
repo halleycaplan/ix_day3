@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function index() {
+export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg">
       <div style={{ margin: "0px 5%" }} className="container-fluid">

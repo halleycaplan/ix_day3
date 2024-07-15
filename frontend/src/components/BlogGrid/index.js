@@ -29,6 +29,7 @@ export default function BlogGrid({ blogPosts }) {
                 imageOrientation={"left"}
                 index={1}
                 blogPost={blogPosts[1]}
+
               />
             </div>
           )}
